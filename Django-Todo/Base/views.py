@@ -30,7 +30,6 @@ class RegisterView(FormView):
             return redirect('/')
         return super().get(*args, **kwargs)
 
-
 class CustomLogoutView(LogoutView):
 
    def get(self, request, *args, **kwargs):
